@@ -61,7 +61,6 @@ main {
     color: white;
     width: 92%;
     height: 350;
-    /* background-color: aqua; */
     background-image: linear-gradient(to left, rgba(3, 37, 65, .8), rgba(3, 37, 65, 1));
 }
 
@@ -101,18 +100,67 @@ main {
     background-image:  linear-gradient(to right, rgba(30, 213, 169), rgba(1, 180, 228));
 }
 
+
+/* Main Content Style */
+
 .main_content_wrapper {
     display: flex;
     justify-content: center;
+    height: 300px;
 }
 
 .main_content_container {
     width: 92%;
     outline: red dotted 2px;
-    height: 200px;
+    min-height: 410px;
 }
 
 .main_content_header {
     margin-left: 60px;
     margin-top: 25px;
+}
+
+/* Cards Style */
+
+.main_content_cards_container {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 40px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.main_content_card {
+    margin: 20px;
+    width: 150px;
+    min-width: 150px;
+    border-radius: 20px;
+    overflow: visible;
+}
+
+.main_content_img_container {
+    width: 100%;
+}
+
+.main_content_img_container img {
+    width: 100%;
+    min-height: calc(150px * 1.5);
+    border-radius: 20px;
+}
+
+.card_header {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.card_header a {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Footer Style */
+
+footer {
+    background-color: rgba(3, 37, 65);
+    height: 100px;
 }
